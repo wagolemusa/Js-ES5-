@@ -58,8 +58,7 @@
             var title = document.getElementById('title').value;
             var dates = document.getElementById('dates').value;
             var entries = document.getElementById(entries).value;
-
-            var data = "title="+title, "dates="+dates, "entries="+entries
+	        var data = {title:title, dates:dates, entries:entries}
             var xhr = new XMLHttpRequest();
             xhr.open('POST','https://dairyapp.herokuapp.com/api/v2/entries', true);
             
